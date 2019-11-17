@@ -1,0 +1,61 @@
+<!--
+  ~ Copyright 2018, The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Android Trivia</string>
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again?</string>
+    <string name="position">Position</string>
+    <string name="select_an_avatar">Select an Avatar</string>
+    <string name="android_trivia">Android Trivia</string>
+    <string name="about_text">Android Trivia will help remind you of important concepts you have learned and will learn in Android development.\n\nConsider modifying the questions and graphics to make this game your own!</string>
+    <string name="rules_text">Select the answer from the options given. Each time you get an answer correct, you advance to the next question.\n\nIf you get the answer wrong, your game ends! You can return to the title screen using up or back from within the game screen, and this will also end your game.</string>
+    <string name="rules">Rules</string>
+    <string name="about">About</string>
+    <string name="trivia_hint">Trivia Hint</string>
+    <string name="title_android_trivia_question">Android Trivia (%1$d/%2$d)</string>
+    <string name="title_about_trivia">About Trivia</string>
+    <string name="title_trivia_rules">Trivia Rules</string>
+    <string name="share_success_text">I mastered #UdacityAndroidTrivia with %1$d/%2$d correct questions!</string>
+    <string name="submit_button">Submit</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="share">Share</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile_img">profile_img</string>
+    <string name="s_name">Name</string>
+    <string name="S_nickname">Nick Name</string>
+    <string name="S_aboutme">About Me</string>
+    <string name="ss_name">Jerry Sie</string>
+    <string name="ss_nickname">Jerry</string>
+    <string name="ss_aboutme">
+        I was born and raised in Miaoli, Taiwan.
+        Graduated from the department of Mechanical Engineering,National Taiwan University
+        Learned a lot of theories and being able to prove myself that I can apply my abilities in the field.
+        I have great interest in learning technical innovations. Assemble computer by myself,
+        sports, programming language and machines are also my hobbies, and I like coding to solve problem.
+        I am an easygoing and responsible person who like to work with others.
+        Use elastica theory to study the deformation and stability of a rod under prescribed end twist of magnitude 1.238 and then under the action of axial load.
+        And I use shooting method to solve for the static deformation and then the vibration frequencies.
+        From the calculated frequencies we can determine the stability of the static deformation. As a result,
+        the behavior or the rod under prescribed axial displacement can be predicted.
+        Both non-self-contact and self-contact deformations are studied in detail.
+    </string>
+    <string name="profile">Profile</string>
+    <string name="buttom_profile">Profile</string>
+</resources>
