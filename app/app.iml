@@ -25,7 +25,7 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\debug\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\debug\java;E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\release\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\release\java;E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\debugAndroidTest\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\debugUnitTest\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\app\src\releaseUnitTest\kotlin">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\debug\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\debug\java;E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\release\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\release\java;E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\debugAndroidTest\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\debugUnitTest\kotlin;E:\20191117_HW2\andfun-kotlin-android-trivia\android_class_kotlin_HW2\app\src\releaseUnitTest\kotlin">
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/tmp/kotlin-classes/debug" />
