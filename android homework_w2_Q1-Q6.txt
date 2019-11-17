@@ -1,0 +1,162 @@
+1. What is Inheritance ? Try to explain in Mandarin.
+
+Inheritance : 繼承
+當程式的功能比較多，或是架構比較複雜，使用物件導向的"繼承"，
+可以讓程式碼更精簡，完成應用程式需要的功能。
+
+使用方法如下:
+
+open class 父類別名稱{}
+/*宣告一個可被繼承的類別*/
+
+class 子類別名稱(參數名稱: 參數型態,..., val|var 屬性名稱: 屬性型態): 父類別名稱(參數,...)
+/*子類別將繼程父類別原有的屬性及方法，也可覆寫/新增自己的屬性及方法*/
+
+/*week1作業中Q5~Q6及有使用到繼承方法*/
+
+
+
+2. How to split a string in Android? Explain your understanding, and even better to attach
+some sample code.
+
+分割字串可以使用函數split()來操作，
+Kotlin有兩種作法 :
+
+method 1 : split + 正則表達式
+
+
+正則表達示幾種範例如下
+語法	          正則表達式	          note
+整數	            [0-9]+	       可描述包含0~9的整數，ex 9527  
+有小數點的實數	  [0-9]+\.[0-9]+       可描述包含小數點的數字，ex 9.527
+英文詞彙	    [A-Za-z]+	       可描述英文字串，ex Jerry
+
+smaple code
+fun main() {
+    var str1 = "Taoyuan 320 Hsinchu 300 Miaoli 350 adress"
+    /*str1輸入郵遞區碼,內含數字與英文*/
+
+    val list1 = str1.split(Regex("[0-9]+"))/**/
+    /*分割str1 0~9的字串,所以可預期區碼都會被分割*/
+    println(list1)
+}
+
+執行結果 => [Taoyuan ,  Hsinchu ,  Miaoli ,  adress]
+/*如預期,含有數字0~9的字串都被分割*/
+
+
+
+method 2 : split + 任意字串
+
+sample code
+fun main() {
+    val str1 = "AppWorks School is very good place"
+    /*str1英文字串*/
+    val list1 = str1.split("c","i")
+    /*分割str1中c和i的字串*/
+    println(list1)
+}
+
+執行結果 => [AppWorks S, hool , s very good pla, e]
+/*如預期,含c和i的字串被分割*/
+
+
+3. What kind of key-value pair collection we use in Android? Attach a sample code that use
+for-loop to print each key-value pair.
+
+kolin裡的集合類型分為三種 : List,Set,Map
+
+其中Map<K,V>的每一個元素都有鍵（key）與值（value）
+
+宣告方法如下:
+val 變數名稱 : HashMap<Key型態, Value型態> = HashMap()
+或
+val 變數名稱 = HashMap<Key型態, Value型態>()
+
+加入元素到Map物件方法如下:
+Map物件變數.put(key, value)
+或
+Map物件變數[key] = value
+
+sample code
+fun main() {
+    val names01 = HashMap<String, String>()
+
+    names01.put("A", "Apple")
+    names01.put("B", "Banana")
+    /* 使用put函式加入元素，第一個參數為key，第二個參數為value*/
+    names01["C"] = "Cat"
+    names01["B"] = "Bird"
+    /* 也可以使用陣列的語法加入元素;
+       而當key重復時，集合會覆蓋掉重復的元素*/
+
+    for ((key, value) in names01.entries) {
+        println("key : $key => value : $value")
+    }
+    /*使用Map搭配entries的for迴圈，讀取所有元素的key與value*/
+}
+執行結果 :
+key : A => value : Apple
+key : B => value : Bird
+key : C => value : Cat
+/*可以發現重復的key "B"對應的value被覆寫為Bird*/
+
+
+4. What’s the difference between ArrayList and LinkedList? Try to explain in Mandarin.
+
+ArrayList => 是以陣列的方式來存放物件參考值的，長度是可變動的，並且會預留空間來存放資料
+pros:所以當程式或演算法需要大量運用索引來取得或搜尋集合內資料的時候，使用 ArrayList 較為快速
+cons:在插入元素或刪除中間元素時，因為需要將後面的資料全部往後或往前移，所以會花費較多時間
+
+LinkedList ＞ 是以連結串列的方法來儲存資料的，也就是一個元素接著一個的串在一起
+pros:當程式需要刪除或插入中間元素的時候，利用 LinkedList 較為迅速
+     若是需要對集合內容做排序，也是用LinkedList較為迅速，因為插入元素時所花的時間較為短暫。
+cons:當程式需要依照索引來查詢或存取資料時就比較不方便，因為每個節點並不知道自己所在的位置，所以必須從頭開始
+　　　一個一個往下找，所花時間也較多。
+
+5. What are Value Type variables? List out the Value Type variables you know.
+
+Value Type variables : 實值變數型別
+實值型別變數會儲存資料的值，如數值的1、3.52、9527...等。指派一個實值型別變數給其他實值型別變數，會複製所包含的值。
+
+以下為kotlin中value type列表 : 
+Type	Size (bits)	Min value	                 Max value
+Byte	   8	         -128	                            127
+Short	   16	        -32768	                           32767
+Int	   32	   -2,147,483,648 (-2^31)	        2,147,483,647 (2^31 - 1)
+Long	   64	-9,223,372,036,854,775,808 (-2^63)	9,223,372,036,854,775,807 (2^63 - 1)
+Float	   32             1.4E-45                         3.4028235E38
+Double	   64             4.9E-324                      1.7976931348623157E308
+char       16                                 \uXXXX
+boolean                                     ture or false
+
+note.
+Reference Type : 參考型別
+參考型別變數是儲存資料的參考(資料所在位址)，參考型別變數的指派會複製物件的參考，但不會複製物件的值。
+ex String、Array...
+
+
+6. What’s the maximum value of Int ? If you want to represent integers larger than the limit,
+what should you do instead of using int variables?
+
+maximum value of Int : 2,147,483,647 (2^31 - 1)
+
+以下為整數型別的型態
+
+Type	Size (bits)	Min value	                 Max value
+Byte	   8	         -128	                            127
+Short	   16	        -32768	                           32767
+Int	   32	   -2,147,483,648 (-2^31)	        2,147,483,647 (2^31 - 1)
+Long	   64	-9,223,372,036,854,775,808 (-2^63)	9,223,372,036,854,775,807 (2^63 - 1)
+
+由上表可知，若值超出了Int的值域，可以將此變數指定型態為Long()，其值域較廣
+
+有幾種作法 :
+
+var a : Long = 初數值  /*a被宣告為Long型態*/
+
+var a = 初數值L        /*數值為Long型態*/
+
+var a = 初數值.toLong  /*數值為Long型態*/
+
+var a = 初數值         /*若數值超過Int範圍，則會默認a為Long型態*/    
