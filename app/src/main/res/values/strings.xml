@@ -44,17 +44,14 @@
     <string name="ss_name">Jerry Sie</string>
     <string name="ss_nickname">Jerry</string>
     <string name="ss_aboutme">
-        I was born and raised in Miaoli, Taiwan.
-        Graduated from the department of Mechanical Engineering,National Taiwan University
+        I was born and raised in Miaoli, Taiwan.Graduated from the department of Mechanical Engineering,National Taiwan University
         Learned a lot of theories and being able to prove myself that I can apply my abilities in the field.
         I have great interest in learning technical innovations. Assemble computer by myself,
         sports, programming language and machines are also my hobbies, and I like coding to solve problem.
-        I am an easygoing and responsible person who like to work with others.
-        Use elastica theory to study the deformation and stability of a rod under prescribed end twist of magnitude 1.238 and then under the action of axial load.
+        I am an easygoing and responsible person who like to work with others. Use elastica theory to study the deformation and stability of a rod under prescribed end twist of magnitude 1.238 and then under the action of axial load.
         And I use shooting method to solve for the static deformation and then the vibration frequencies.
         From the calculated frequencies we can determine the stability of the static deformation. As a result,
-        the behavior or the rod under prescribed axial displacement can be predicted.
-        Both non-self-contact and self-contact deformations are studied in detail.
+        the behavior or the rod under prescribed axial displacement can be predicted. Both non-self-contact and self-contact deformations are studied in detail.
     </string>
     <string name="profile">Profile</string>
     <string name="buttom_profile">Profile</string>
